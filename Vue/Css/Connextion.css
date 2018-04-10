@@ -1,0 +1,12 @@
+#connextionF{
+    background-color: blue;
+    text-align: center;
+    border:2px blue groove;
+}
+
+#inscriptionF{
+    text-align: center;
+}
+#inscriptionF>#inscription{
+    color: blue;
+}
