@@ -7,6 +7,24 @@
 #inscriptionF{
     text-align: center;
 }
-#inscriptionF>#inscription{
-    color: blue;
+div#email{
+    color: white;
+}
+div#mp{
+    color: white;
+}
+button#connextion.connextion{
+    color:white;
+    background-color: blue;
+     border:1px black solid;
+}
+p#manque.manque{
+    font-size: 20px;
+    color: red;
+}
+button#inscription.inscription{
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    border:1px black solid;
 }

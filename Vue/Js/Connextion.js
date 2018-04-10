@@ -25,10 +25,10 @@ $(document).ready(function(){
     //verif tout les variable pour pouvoir faire inscrition
     function inscrition(prenom,nom,login,loginC,mp,aniv,sexe){ 
          var valid=true;
-        valid=valid &&checkLength(mp,"mot de passe",5,100);
+        valid=valid &&checkLength(mp,"mot de passe ",5,100);
         
-        valid=valid && checkRegexp(prenom,/^[a-zA-Z_-]+$/,"un prenom est composer que de lettre");
-        valid=valid && checkRegexp(nom,/^[a-zA-Z_-]+$/,"un nom est composer que de lettre");
+        valid=valid && checkRegexp(prenom,/^[a-zA-Z_-]+$/,"un prenom est composer que de lettre ");
+        valid=valid && checkRegexp(nom,/^[a-zA-Z_-]+$/,"un nom est composer que de lettre ");
                 
             
          
@@ -117,7 +117,7 @@ $(document).ready(function(){
     function checkLength(o,n,min,max){
         if(o.length>max||o.length<min){
             if(max==min){
-                updateTips("La longeur de "+n+" doit être de "+max+".");
+                updateTips("La longeur de "+n+"   doit être de "+max+".");
             }
             else{
             updateTips("Longeur du "+n+ "doit être entre "+min+" et "+max+".");
